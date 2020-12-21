@@ -1,3 +1,12 @@
+from tkinter import *
+
+root = Tk()
+root.geometry('300x300')
+root.title('DataFlair-Mad Libs Generator')
+Label(root, text='Mad Libs Generator \n Have Fun!', font='arial 20 bold').pack()  #pack function is used to display this, center aligned from the top
+Label(root, text = 'Click Any One :', font = 'arial 15 bold').place(x=40, y=80)
+
+
 
 def story1():
     name = input('Please enter friend name: ')
@@ -19,16 +28,7 @@ def story2():
           ' started chasing us.Out of fear I woke up then')
 
 
-print('*****************************')
-print("Madlib Game. \n1.Zoo \n2.Dream")
-print('*******************************')
+Button(root, text='  ZOO  ', font='arial 15', command=story1).place(x=120, y =140)
+Button(root, text='Dream', font='arial 15', command=story2).place(x=120, y =210)
 
-choice = int(input('Enter your choice'))
-
-
-if choice ==1:
-    story1()
-elif choice == 2:
-    story2()
-else:
-    print('wrong choice, please enter valid choice')
+root.mainloop()
