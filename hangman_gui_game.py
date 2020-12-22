@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+import array as ar
 
 #common function for GUI
 def replace_value(obj,x):
@@ -9,6 +10,7 @@ def replace_value(obj,x):
 class Hangman:
     #function
     def process(self, l):
+        print(l)
         ind = 0
         self.guess_counter += 1
         guess_left = self.max_guess - self.guess_counter
@@ -42,7 +44,7 @@ class Hangman:
             messagebox.showinfo(title="Please try again", message="You have Exceeded the limit... \nThe word is "+self.word)
             self.gui.quit()
 
-    def init(self):
+    def __init__(self):
         # List intialization
         self.wrong_guess = []
         self.list = ['_','_','_','_','_','_','_' ]
@@ -52,9 +54,23 @@ class Hangman:
         self.guess_counter = 0
 
         #guess word intializtion
+        #TODO: intialize predefined list to choose random word every run
         self.word = 'ATTRACT'
         self.w = self.word.__len__()
         self.gui = Tk()
+
+    def button_build(self, y=200):
+        x = 50
+
+        for i in range(0, 26):
+            charc = chr(65+i)#A-Z
+            btn = Button(self.gui, text=charc, font='arial 8', command=lambda c=charc: self.process(c))
+            btn.place(x=x, y=y)
+            x += 25
+            if i == 13:
+                x =73
+                y += 35
+
 
     def build(self):
         gui = self.gui
@@ -71,13 +87,6 @@ class Hangman:
         Label(gui, text='Wrong Moves', font="arial 8").place(x=210,y=100)
         self.wrng_move = Text(gui, height = 1, width = 11)
 
-        Button(gui, text = 'A',font='arial 8', command = lambda : self.process('A')).place(x=50,y=200)
-        Button(gui, text = 'T',font='arial 8', command = lambda : self.process('T')).place(x=70,y=200)
-        Button(gui, text = 'R',font='arial 8', command = lambda : self.process('R')).place(x=90,y=200)
-        Button(gui, text = 'C',font='arial 8', command = lambda : self.process('C')).place(x=110,y=200)
-        Button(gui, text = 'Z',font='arial 8', command = lambda : self.process('Z')).place(x=130,y=200)
-        Button(gui, text = 'M',font='arial 8', command = lambda : self.process('M')).place(x=150,y=200)
-
         #to show word length in GUI
         self.len.place(x=80,y=100)
         self.len.insert(END, self.w)
@@ -89,12 +98,13 @@ class Hangman:
         # to show wrong gusses in GUI
         self.wrng_move.place(x=310, y=100)
         self.res.place(x=120, y=50)
+        self.res.insert(END,self.list)
 
+        self.button_build()
         gui.mainloop()
 
 #object creation for class
 hm = Hangman()
-hm.init()
 hm.build()
 
 

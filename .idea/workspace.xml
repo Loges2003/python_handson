@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dda02b92-a90a-4708-b77c-098f08287fb9" name="Default Changelist" comment="dice game">
+    <list default="true" id="dda02b92-a90a-4708-b77c-098f08287fb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hangman_gui_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangman_gui_game.py" afterDir="false" />
     </list>
@@ -73,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hangman_gui_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="95" column="14" lean-forward="true" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+            <state relative-caret-position="154">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -85,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dummy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="20">
+              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -275,8 +275,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.hangman_gui_game" />
-        <item itemvalue="Python.madlib" />
         <item itemvalue="Python.dummy" />
+        <item itemvalue="Python.madlib" />
         <item itemvalue="Python.dice_game" />
         <item itemvalue="Python.number_guessing" />
       </list>
@@ -342,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608620217406</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Hangman Game updated with OOPS concept Class and methods">
+      <created>1608621915999</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608621915999</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -354,7 +361,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41503268" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41503268" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28921568" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,7 +380,8 @@
     <MESSAGE value="update madlib generator 1" />
     <MESSAGE value="update madlib generator 1 with widget thinter" />
     <MESSAGE value="dice game" />
-    <option name="LAST_COMMIT_MESSAGE" value="dice game" />
+    <MESSAGE value="Hangman Game updated with OOPS concept Class and methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hangman Game updated with OOPS concept Class and methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -506,15 +514,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dummy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="20">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hangman_gui_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="95" column="14" lean-forward="true" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+        <state relative-caret-position="154">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
