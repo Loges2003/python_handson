@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import array as ar
+import random as rand
 
 #common function for GUI
 def replace_value(obj,x):
@@ -47,17 +48,25 @@ class Hangman:
     def __init__(self):
         # List intialization
         self.wrong_guess = []
-        self.list = ['_','_','_','_','_','_','_' ]
 
-        # Counter intialization
-        self.max_guess = 7
-        self.guess_counter = 0
+
 
         #guess word intializtion
-        #TODO: intialize predefined list to choose random word every run
-        self.word = 'ATTRACT'
+        self.word = self.choose_rand_word()
+
         self.w = self.word.__len__()
+        self.list = ['_'] * self.w
+
         self.gui = Tk()
+
+        # Counter intialization
+        self.max_guess = self.w + 4
+        self.guess_counter = 0
+
+    def choose_rand_word(self):
+        word_list = ['ATTRACT', 'APPLE', 'RENDEZVOUS', 'COMMITMENT']
+        return word_list[rand.randint(0, len(word_list) - 1)]
+
 
     def button_build(self, y=200):
         x = 50
@@ -77,7 +86,7 @@ class Hangman:
         gui.geometry('500x300')
         gui.title('Hangman\'s game')
 
-        self.res = Text(gui, height=1, width=15)
+        self.res = Text(gui, height=1, width=20)
         Label(gui, text='Word Length', font="arial 8").place(x=10,y=100)
         self.len = Text(gui,height=1, width = 3)
 
